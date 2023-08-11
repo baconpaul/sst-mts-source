@@ -1,0 +1,12 @@
+[submodule "libs/tuning-library"]
+	path = libs/tuning-library
+	url = https://github.com/surge-synthesizer/tuning-library
+[submodule "libs/MTS-ESP"]
+	path = libs/MTS-ESP
+	url = https://github.com/ODDSound/MTS-ESP
+[submodule "libs/JUCE"]
+	path = libs/JUCE
+	url = https://github.com/juce-framework/JUCE/
+[submodule "libs/sst-jucegui"]
+	path = libs/sst-jucegui
+	url = https://github.com/surge-synthesizer/sst-jucegui
