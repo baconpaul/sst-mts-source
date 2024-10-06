@@ -6,8 +6,9 @@ project(sst-mts-source VERSION 0.9.0 LANGUAGES C CXX)
 set(CMAKE_CXX_STANDARD 17)
 
 add_subdirectory(libs/JUCE)
-add_subdirectory(libs/sst-jucegui)
-add_subdirectory(libs/tuning-library)
+add_subdirectory(libs/clap-juce-extensions EXCLUDE_FROM_ALL)
+add_subdirectory(libs/sst/sst-jucegui)
+add_subdirectory(libs/sst/tuning-library)
 
 
 juce_add_plugin(${PROJECT_NAME}
@@ -26,6 +27,11 @@ juce_add_plugin(${PROJECT_NAME}
 
     COPY_PLUGIN_AFTER_BUILD FALSE
 )
+
+clap_juce_extensions_plugin(TARGET ${PROJECT_NAME}
+        CLAP_ID "org.surge-synth-team.mts-source.clap"
+        CLAP_FEATURES instrument "tuning source" microtonal)
+
 
 target_include_directories(${PROJECT_NAME}
   PRIVATE

@@ -1,5 +1,5 @@
 [submodule "libs/tuning-library"]
-	path = libs/tuning-library
+	path = libs/sst/tuning-library
 	url = https://github.com/surge-synthesizer/tuning-library
 [submodule "libs/MTS-ESP"]
 	path = libs/MTS-ESP
@@ -8,5 +8,8 @@
 	path = libs/JUCE
 	url = https://github.com/juce-framework/JUCE/
 [submodule "libs/sst-jucegui"]
-	path = libs/sst-jucegui
+	path = libs/sst/sst-jucegui
 	url = https://github.com/surge-synthesizer/sst-jucegui
+[submodule "libs/clap-juce-extensions"]
+	path = libs/clap-juce-extensions
+	url = https://github.com/free-audio/clap-juce-extensions
