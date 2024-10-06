@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.10)
 
 set(CMAKE_OSX_DEPLOYMENT_TARGET 10.14 CACHE STRING "Build for 10.11")
 
-project(sst-mts-source VERSION 0.9.0 LANGUAGES CXX)
+project(sst-mts-source VERSION 0.9.0 LANGUAGES C CXX)
 set(CMAKE_CXX_STANDARD 17)
 
 add_subdirectory(libs/JUCE)
@@ -48,8 +48,8 @@ target_compile_definitions(${PROJECT_NAME} PUBLIC
     JUCE_DISPLAY_SPLASH_SCREEN=0
     JUCE_REPORT_APP_USAGE=0
 
-    JUCE_ALSA=1
-    JUCE_JACK=1
+    JUCE_ALSA=0
+    JUCE_JACK=0
 )
 
 target_link_libraries(${PROJECT_NAME} PUBLIC

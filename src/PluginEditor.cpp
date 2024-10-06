@@ -30,9 +30,9 @@ struct SSTMTSWindow : jcmp::WindowPanel
     {
         sst::jucegui::style::StyleSheet::initializeStyleSheets([]() {});
         const auto &base = sst::jucegui::style::StyleSheet::getBuiltInStyleSheet(sst::jucegui::style::StyleSheet::DARK);
-        base->setColour(jcmp::WindowPanel::Styles::styleClass, jcmp::WindowPanel::Styles::backgroundgradstart, juce::Colour(60,60,70));
-        base->setColour(jcmp::WindowPanel::Styles::styleClass, jcmp::WindowPanel::Styles::backgroundgradend, juce::Colour(20,20,30));
-        base->setColour(jcmp::BaseStyles::styleClass, jcmp::BaseStyles::regionBorder, juce::Colour(90,90,100));
+        base->setColour(jcmp::WindowPanel::Styles::styleClass, jcmp::WindowPanel::Styles::bgstart, juce::Colour(60,60,70));
+        base->setColour(jcmp::WindowPanel::Styles::styleClass, jcmp::WindowPanel::Styles::bgend, juce::Colour(20,20,30));
+        base->setColour(jcmp::base_styles::Outlined::styleClass, jcmp::base_styles::Outlined::brightoutline, juce::Colour(90,90,100));
         setStyle(base);
 
 
